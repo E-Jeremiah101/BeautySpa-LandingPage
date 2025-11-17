@@ -9,7 +9,7 @@ const About = () => {
     <>
       <div className="px-7 md:px-59">
         <div className="flex justify-center ">
-          <span className="text-[2.3rem] " class="service active-service">
+          <span className="" class="service active-service">
             About Us
           </span>
         </div>

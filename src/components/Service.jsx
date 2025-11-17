@@ -8,18 +8,18 @@ const Service = () => {
   return (
     <div className=" mt-10 px-7 md:px-59 mb-17">
       <div className="flex justify-center ">
-        <span className="text-[2.3rem]" class="service active-service">
+        <span className="text-[2.6rem]" class="service active-service">
           Services
         </span>
       </div>
 
       <div className="flex justify-center">
-        <div className=" md:w-fit  grid md:grid-cols-3 gap-4 object-cover">
-          <div className="md:w-63 w-80">
+        <div className=" md:w-fit  grid md:grid-cols-3 md:gap-4 gap-8  object-cover mt-3">
+          <div className="md:w-63 w-97">
             <img
               src={Cream}
               alt=""
-              className="h-60 w-80 md:w-63 rounded-xl "
+              className="h-65 w-97 md:w-63 rounded-xl "
             />
             <h2 className="font-bold" class="sub-head">
               Manicure & Pedicure
@@ -29,11 +29,11 @@ const Service = () => {
               nails.
             </span>
           </div>
-          <div className="md:w-63 w-80">
+          <div className="md:w-63 w-97">
             <img
               src={Rooming}
               alt=""
-              className="h-60 w-80 md:w-63 rounded-xl object-cover"
+              className="h-65 w-97 md:w-63 rounded-xl object-cover"
             />
             <h2 className="font-bold " class="sub-head">
               Facial Treatment
@@ -43,11 +43,11 @@ const Service = () => {
               to nourish and rejuvenate.
             </span>
           </div>
-          <div className="md:w-63 w-80">
+          <div className="md:w-63 w-97">
             <img
               src={Mind}
               alt=""
-              className="h-60  w-80 md:w-63 rounded-xl object-cover "
+              className="h-65  w-97 md:w-63 rounded-xl object-cover "
             />
             <h2 className="font-bold " class="sub-head">
               Aromatherapy Massage

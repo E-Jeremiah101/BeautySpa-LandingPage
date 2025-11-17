@@ -58,6 +58,7 @@ position: relative;
   font-family: "Fira Sans", sans-serif;
   margin-bottom: 20px;
   font-weight: 800;
+  font-size: 1.8rem;
   font-style: normal
 }
 
@@ -76,7 +77,7 @@ position: relative;
 }
 .sub-head{
   font-family: "Fira Sans", sans-serif;
-  font-size: 1rem;
+  font-size: 1.3rem;
   font-weight: 800;
   font-style: normal;
   margin: 7px 0;
