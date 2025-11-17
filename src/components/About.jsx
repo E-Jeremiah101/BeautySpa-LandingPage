@@ -35,7 +35,7 @@ const About = () => {
             </p>
 
             <div className="mt-10">
-              <button className="text-white text-2xl rounded-2xl  px-8 py-4 bg-[#ffbfa3]">
+              <button className="text-white font-extrabold text-2xl rounded-2xl  px-8 py-4 bg-[#ffbfa3]">
                 Contact Us
               </button>
             </div>
@@ -44,7 +44,7 @@ const About = () => {
       </div>
       <div className="mt-18 md:mt-30">
         <div class="img-bg flex items-center md:px-10 ">
-          <div className="bg-white/50 md:h-[65vh] h-full w-full md:w-150 md:block flex md:pl-10 md:py-5 items-center justify-center">
+          <div className="bg-white/40 md:h-[65vh] h-full w-full md:w-150 md:block flex md:pl-10 md:py-5 items-center justify-center">
             <div className="md:w-100">
               <h2 className="mb-10 " class="about-sub2 service active-service">
                 Ultimate Pampering Package

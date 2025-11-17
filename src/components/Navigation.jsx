@@ -35,12 +35,12 @@ const Navigation = () => {
 
       {/* Mobile Dropdown */}
       {isOpen && (
-        <div className="absolute top-0 bottom-99 left-0 right-0 bg-[#fff8f2]  shadow-lg p-4 md:hidden z-10 text-black">
-          <div onClick={() => setIsOpen((isOpen) => !isOpen)}>
-            {isOpen ? <X /> : <Menu />}
+        <div className="absolute top-0 bottom-100 left-0 right-0 bg-[#fff8f2]  shadow-lg p-4 md:hidden z-10 text-black">
+          <div className="mb-5 mt-2" onClick={() => setIsOpen((isOpen) => !isOpen)}>
+            {isOpen ? <X  size={32}/> : <Menu />}
           </div>
-          <ul className="space-y-4 text-black font-bold">
-            <li className="">
+          <ul className=" space-y-10 text-black font-semibold text-[1.3rem]">
+            <li className=" space-y-10">
               <Link className="block text-black no-underline">Home</Link>
             </li>
             <li>
