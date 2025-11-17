@@ -35,7 +35,7 @@ const About = () => {
             </p>
 
             <div className="mt-10">
-              <button className="text-white text-2xl  px-8 py-4 bg-[#ffbfa3]">
+              <button className="text-white text-2xl rounded-2xl  px-8 py-4 bg-[#ffbfa3]">
                 Contact Us
               </button>
             </div>
@@ -50,7 +50,7 @@ const About = () => {
                 Ultimate Pampering Package
               </h2>
               
-              <span className="pt-5 block">Immerse yourself in a journey of pure indulgence</span>
+              <span className="pt-5 block font-semibold">Immerse yourself in a journey of pure indulgence</span>
             </div>
             
           </div>
