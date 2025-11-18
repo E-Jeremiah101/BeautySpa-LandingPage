@@ -49,10 +49,11 @@ const About = () => {
               <h2 className="mb-10 " class="about-sub2 service active-service">
                 Ultimate Pampering Package
               </h2>
-              
-              <span className="pt-5 block font-semibold">Immerse yourself in a journey of pure indulgence</span>
+
+              <span className="pt-5 block font-semibold">
+                Immerse yourself in a journey of pure indulgence
+              </span>
             </div>
-            
           </div>
         </div>
       </div>
