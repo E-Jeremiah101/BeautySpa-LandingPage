@@ -18,7 +18,6 @@ const HomePage = () => {
     <About/>
     <Testimonial/>
     <Contact/>
-
     </Element>
 
     </>

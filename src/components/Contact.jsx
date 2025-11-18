@@ -17,9 +17,7 @@ const Contact = () => {
 
       <div className=" ">
         <div className="">
-          {/* <h2 className="text-[1.2rem] font-semibold">
-            Relax and rejuvenate in our calm and opulent sanctuary.
-          </h2> */}
+         
 
           <div
             className="flex items-center gap-2 font-semibold text-[1rem]
@@ -76,7 +74,7 @@ const Contact = () => {
       </div>
 
       <div className="pt-20">
-        <div className=" flex gap-4 cursor-pointer">
+        <div className=" flex justify-between md:gap-4 cursor-pointer md:justify-normal ">
           <Link to="services"  smooth={true} duration={500}>
             <span>HOME</span>
           </Link>
@@ -96,9 +94,9 @@ const Contact = () => {
 
         <div className="pt-15">
           <h2 className="">Kalm Beauty</h2>
-          <p className="block">
+          <span className="block pb-3">
             Copyright © {new Date().getFullYear()} All rights reserved
-          </p>
+          </span>
         </div>
       </div>
     </div>

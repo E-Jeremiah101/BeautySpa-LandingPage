@@ -7,7 +7,7 @@ const HeroImage = () => {
       <div className="flex justify-center text-center align-middle">
         <div className="text-[#fff8f2] font mt-[47%] md:mt-[15%] ">
           <h1 className="text-[2.3rem] md:text-[3rem] shadow">
-            Beauty Inspired by <br />
+            Kalm's Beauty, Inspired by <br />
             Nature.
           </h1>
 
