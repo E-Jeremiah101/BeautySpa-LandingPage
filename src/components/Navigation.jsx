@@ -71,7 +71,7 @@ const Navigation = () => {
           >
             {isOpen ? <X size={32} /> : <Menu />}
           </div> */}
-          <ul className="  text-black font-semibold gap-6 flex text-[1.3rem] p-0 m-0 justify-center">
+          <ul className="  text-black  gap-6 flex text-[1.1rem] p-0 m-0 justify-center">
             <li className="">
               <Link
                 className="block text-black no-underline cursor-pointer"
