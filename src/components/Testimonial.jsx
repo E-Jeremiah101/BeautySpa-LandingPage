@@ -5,6 +5,7 @@ import Cream from "../assets/images/review3.jpg";
 import girlback from "../assets/images/African-beauty.jpg";
 import girls from "../assets/images/review4.jpg";
 import { Element } from "react-scroll";
+import ScrollReveal from "./ScrollReveal.jsx";
 
 const slides = [
   {
@@ -73,33 +74,35 @@ const Testimonial = () => {
 
   return (
     <>
-      <Element name="testimonial">
-        <div className="flex justify-center mt-10">
-          <span className="service active-service">Testimonials</span>
+      <ScrollReveal direction="up" delay={0.5} duration={1}>
+        <Element name="testimonial">
+          <div className="flex justify-center mt-10">
+            <span className="service active-service">Testimonials</span>
+          </div>
+        </Element>
+
+        <div className="overflow-hidden w-full md:w py-10">
+          <div ref={containerRef} className="flex gap-10">
+            {infiniteSlides.map((slide, i) => (
+              <div
+                key={i}
+                className="min-w-[350px] bg-white p-6 rounded-2xl shadow-lg flex flex-col items-center text-center"
+              >
+                <img
+                  src={slide.url}
+                  alt={slide.title}
+                  className="w-24 h-24 rounded-full object-cover mb-4"
+                />
+
+                <h3 className="font-semibold text-lg">{slide.title}</h3>
+                <p className="text-gray-700 mt-2">{slide.description}</p>
+
+                <p className="mt-3 text-gray-900 font-medium">~ {slide.mode}</p>
+              </div>
+            ))}
+          </div>
         </div>
-      </Element>
-
-      <div className="overflow-hidden w-full md:w py-10">
-        <div ref={containerRef} className="flex gap-10">
-          {infiniteSlides.map((slide, i) => (
-            <div
-              key={i}
-              className="min-w-[350px] bg-white p-6 rounded-2xl shadow-lg flex flex-col items-center text-center"
-            >
-              <img
-                src={slide.url}
-                alt={slide.title}
-                className="w-24 h-24 rounded-full object-cover mb-4"
-              />
-
-              <h3 className="font-semibold text-lg">{slide.title}</h3>
-              <p className="text-gray-700 mt-2">{slide.description}</p>
-
-              <p className="mt-3 text-gray-900 font-medium">~ {slide.mode}</p>
-            </div>
-          ))}
-        </div>
-      </div>
+      </ScrollReveal>
     </>
   );
 }
