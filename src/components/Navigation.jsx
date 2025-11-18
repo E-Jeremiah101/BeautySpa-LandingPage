@@ -14,7 +14,7 @@ const Navigation = () => {
       <ul className=" hidden md:flex space-x-6 text-black">
         <li>
           <Link
-            className="block text-black no-underline cursor-pointer"
+            className="block font-bold text-black no-underline cursor-pointer"
             to="home"
             smooth={true}
             duration={500}
@@ -24,7 +24,7 @@ const Navigation = () => {
         </li>
         <li>
           <Link
-            className="block text-black no-underline cursor-pointer"
+            className="block font-bold text-black no-underline cursor-pointer"
             to="about"
             smooth={true}
             duration={500}
@@ -34,7 +34,7 @@ const Navigation = () => {
         </li>
         <li>
           <Link
-            className="block text-black no-underline cursor-pointer "
+            className="block text-black no-underline font-bold cursor-pointer "
             to="services"
             smooth={true}
             duration={500}
@@ -44,7 +44,7 @@ const Navigation = () => {
         </li>
         <li>
           <Link
-            className="block text-black no-underline cursor-pointer"
+            className="block text-black no-underline font-bold cursor-pointer"
             to="contact"
             smooth={true}
             duration={500}

@@ -7,6 +7,7 @@ import Testimonial from '../components/Testimonial.jsx';
 import { Element } from "react-scroll";
 import Contact from '../components/Contact.jsx';
 
+
 const HomePage = () => {
   return (
     <>
@@ -17,6 +18,7 @@ const HomePage = () => {
     <About/>
     <Testimonial/>
     <Contact/>
+
     </Element>
 
     </>

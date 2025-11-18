@@ -1,6 +1,8 @@
 import React from "react";
 import { Element } from "react-scroll";
 import { MapPin, Clock, Phone } from "lucide-react";
+import { Copyright } from "lucide-react";
+import {Link} from "react-scroll";
 
 const Contact = () => {
   return (
@@ -45,32 +47,59 @@ const Contact = () => {
             <div>
               <input
                 type="text"
-                className="border rounded p-2 w-[100%] placeholder-white text-[1.3rem] bg-black/90 text-white h-12"
+                className="border rounded p-2 w-full placeholder-white text-[1.3rem] bg-black/90 text-white h-12"
                 placeholder="Name"
               />
             </div>
-            <div>
+            <div className="mt-2">
               <input
                 type="email"
                 placeholder="Email"
-                className=" mt-6 p-2 border rounded text-[1.3rem] p-2 w-[100%] placeholder-white bg-black/90 text-white h-12 "
+                className=" border rounded text-[1.3rem] p-2 w-full placeholder-white bg-black/90 text-white h-12 "
               />
             </div>
-            <div>
+            <div className="mt-2">
               <textarea
                 name=""
-                className="mt-6 p-2 rounded border w-[100%] h-40 text-[1.3rem] placeholder-white bg-black/90 text-white "
+                className=" p-2 rounded border w-full h-40 text-[1.3rem] placeholder-white bg-black/90 text-white "
                 id=""
                 placeholder="Message"
               ></textarea>
             </div>
             <div className="text-center mt-3">
-              <button className="border w-[100%] rounded placeholder-white text-[1.3rem] font-bold bg-[#ffbfa3] shadow text-white h-12">
+              <button className="border w-full rounded placeholder-white text-[1.3rem] font-bold bg-[#ffbfa3] shadow text-white h-12">
                 Submit
               </button>
             </div>
           </div>
         </form>
+      </div>
+
+      <div className="pt-20">
+        <div className=" flex gap-4 cursor-pointer">
+          <Link to="services"  smooth={true} duration={500}>
+            <span>HOME</span>
+          </Link>
+          <Link to="services" smooth={true} duration={500}>
+            <span>ABOUT</span>
+          </Link>
+          <Link to="services" smooth={true} duration={500}>
+            <span>SERVICE</span>
+          </Link>
+          <Link to="services" smooth={true} duration={500}>
+            <span>TESTIMONIALS</span>
+          </Link>
+          <Link to="services" smooth={true} duration={500}>
+            <span>CONTACT</span>
+          </Link>
+        </div>
+
+        <div className="pt-15">
+          <h2 className="">Kalm Beauty</h2>
+          <p className="block">
+            Copyright © {new Date().getFullYear()} All rights reserved
+          </p>
+        </div>
       </div>
     </div>
   );
