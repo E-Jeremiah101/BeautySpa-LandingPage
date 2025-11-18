@@ -93,7 +93,7 @@ const Contact = () => {
         </div>
 
         <div className="pt-15">
-          <h2 className="">Kalm Beauty</h2>
+          <h2 className="">Kalm's Beauty</h2>
           <span className="block pb-3">
             Copyright © {new Date().getFullYear()} All rights reserved
           </span>

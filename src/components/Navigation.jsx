@@ -7,7 +7,7 @@ const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="w-full mx-auto py-2 flex justify-between items-center px-4 bg-[#fff8f2]">
+    <div className="w-full mx-auto py-2 fixed flex justify-between z-20 items-center px-4 bg-[#fff8f2]">
       <div className="w-17 font-bold"><img src={logo} alt="" className="rounded-2xl " /></div>
 
       {/* Desktop Menu */}
@@ -64,15 +64,15 @@ const Navigation = () => {
 
       {/* Mobile Dropdown */}
       {isOpen && (
-        <div className="absolute top-0 bottom-100 left-0 right-0 bg-[#fff8f2]  shadow-lg p-4 md:hidden z-10 text-black">
-          <div
+        <div className="top-23  left-5 absolute right-5 rounded-[50px] bg-[#fff8f2]  shadow-lg py-4 md:hidden z-10 text-black">
+          {/* <div
             className="mb-5 mt-2"
             onClick={() => setIsOpen((isOpen) => !isOpen)}
           >
             {isOpen ? <X size={32} /> : <Menu />}
-          </div>
-          <ul className=" space-y-10 text-black font-semibold text-[1.3rem]">
-            <li className=" space-y-10">
+          </div> */}
+          <ul className="  text-black font-semibold gap-6 flex text-[1.3rem] p-0 m-0 justify-center">
+            <li className="">
               <Link
                 className="block text-black no-underline cursor-pointer"
                 to="home"
