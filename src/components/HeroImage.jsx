@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "react-scroll";
 
 const HeroImage = () => {
   return (
@@ -11,9 +12,11 @@ const HeroImage = () => {
           </h1>
 
           <div className="mt-7">
-            <button className="text-white text-2xl font-extrabold rounded px-8 py-4 bg-[#ffbfa3]">
-              Contact Us
-            </button>
+            <Link to="contact" smooth={true} duration={500}>
+              <button className="text-white text-2xl font-extrabold rounded cursor-pointer px-8 py-4 bg-[#ffbfa3]">
+                Contact Us
+              </button>
+            </Link>
           </div>
         </div>
       </div>

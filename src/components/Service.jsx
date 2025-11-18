@@ -1,26 +1,25 @@
-import React from 'react'
+import { Element } from "react-scroll";
 import Rooming from "../assets/images/face-cream.jpg";
 import Mind from "../assets/images/Mindful-Relaxing.jpg";
 import Cream from "../assets/images/Cream-hand.jpg";
-import girlback from "../assets/images/back-treat.jpg"
+import girlback from "../assets/images/back-treat.jpg";
 
 const Service = () => {
   return (
+    
     <div className=" mt-10 px-7 md:px-59 mb-17">
+      <Element name="services">
       <div className="flex justify-center ">
         <span className="text-[2.6rem]" class="service active-service">
           Services
         </span>
       </div>
+      </Element>
 
       <div className="flex justify-center">
         <div className=" md:w-fit  grid md:grid-cols-3 md:gap-4 gap-8  object-cover mt-3">
           <div className="md:w-63 w-97">
-            <img
-              src={Cream}
-              alt=""
-              className="h-65 w-97 md:w-63 rounded-xl "
-            />
+            <img src={Cream} alt="" className="h-65 w-97 md:w-63 rounded-xl " />
             <h2 className="font-bold" class="sub-head">
               Manicure & Pedicure
             </h2>
@@ -61,6 +60,6 @@ const Service = () => {
       </div>
     </div>
   );
-}
+};
 
-export default Service
+export default Service;

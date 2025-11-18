@@ -1,18 +1,18 @@
-import React from "react";
-import Rooming from "../assets/images/face-cream.jpg";
-import Mind from "../assets/images/Mindful-Relaxing.jpg";
-import Cream from "../assets/images/Cream-hand.jpg";
+import {Element} from "react-scroll";
 import girlback from "../assets/images/back-treat.jpg";
+import { Link } from "react-scroll"; 
 
 const About = () => {
   return (
     <>
       <div className="px-7 md:px-59">
-        <div className="flex justify-center ">
-          <span className="" class="service active-service">
-            About Us
-          </span>
-        </div>
+        <Element name="about">
+          <div className="flex justify-center ">
+            <span className="" class="service active-service">
+              About Us
+            </span>
+          </div>
+        </Element>
 
         <div
           className="flex  md:flex-1 md:flex-row flex-col gap-10 mt-10
@@ -35,9 +35,11 @@ const About = () => {
             </p>
 
             <div className="mt-10">
-              <button className="text-white font-extrabold text-2xl rounded-2xl  px-8 py-4 bg-[#ffbfa3]">
-                Contact Us
-              </button>
+              <Link to="contact" smooth={true} duration={500}>
+                <button className="text-white font-extrabold text-2xl rounded-2xl cursor-pointer  px-8 py-4 bg-[#ffbfa3]">
+                  Contact Us
+                </button>
+              </Link>
             </div>
           </div>
         </div>

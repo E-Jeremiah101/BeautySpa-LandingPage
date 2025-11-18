@@ -4,6 +4,7 @@ import Mind from "../assets/images/review2.jpg";
 import Cream from "../assets/images/review3.jpg";
 import girlback from "../assets/images/African-beauty.jpg";
 import girls from "../assets/images/review4.jpg";
+import { Element } from "react-scroll";
 
 const slides = [
   {
@@ -72,9 +73,11 @@ const Testimonial = () => {
 
   return (
     <>
-      <div className="flex justify-center mt-10">
-        <span className="service active-service">About Us</span>
-      </div>
+      <Element name="testimonial">
+        <div className="flex justify-center mt-10">
+          <span className="service active-service">Testimonials</span>
+        </div>
+      </Element>
 
       <div className="overflow-hidden w-full md:w py-10">
         <div ref={containerRef} className="flex gap-10">
